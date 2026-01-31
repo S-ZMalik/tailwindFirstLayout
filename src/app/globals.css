@@ -26,6 +26,21 @@ lekin agar mazeed perfection chahiye toh: */
 body {
   position: relative;
 }
+/* Poori body ke liye scrollbar hide karne ka code */
+body {
+  /* Chrome, Safari aur Opera ke liye */
+  -webkit-overflow-scrolling: touch;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Firefox, IE aur Edge ke liye */
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
 
 @media (max-width: 500px) {
   .mySwiper .swiper-button-next,
