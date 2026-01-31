@@ -205,7 +205,7 @@ const page = () => {
     "evolution.",
   ];
   return (
-    <div className="w-screen text-white bg-[#101435] overflow-hidden">
+    <div className="w-full text-white bg-[#101435] overflow-hidden">
       {/* ============================= NAVBAR==================== */}
       <Navbar />
 
