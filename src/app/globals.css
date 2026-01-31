@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+/* Swiper Buttons ka color white karne ke liye */
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev {
+  color: white !important;
+  transform: scale(0.6); /* Is se button chota ho jayega */
+}
+
+/* Background aur Circle effect ke liye (Optional) */
+.mySwiper .swiper-button-next::after,
+.mySwiper .swiper-button-prev::after {
+  font-size: 24px !important; /* Arrow ka size mazeed control karne ke liye */
+  font-weight: bold;
+}
+
+/* Align Center automatically ho jate hain, 
+lekin agar mazeed perfection chahiye toh: */
+.mySwiper .swiper-button-next {
+  right: 20px !important;
+}
+.mySwiper .swiper-button-prev {
+  left: 20px !important;
+}
+
+body {
+  position: relative;
+}
+
+@media (max-width: 500px) {
+  .mySwiper .swiper-button-next,
+  .mySwiper .swiper-button-prev {
+    display: none !important;
+  }
+}
